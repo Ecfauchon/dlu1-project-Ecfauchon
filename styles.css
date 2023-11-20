@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+
 }
 
 body {
@@ -39,7 +40,8 @@ p {
   color: #6a6b83;
 }
 
-/* || UTILITIES || */
+
+/* || BUTTON || */
 
 button {
   display: inline-block;
@@ -53,6 +55,16 @@ button {
   margin: 2px 22px 20px 22px;
 }
 
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
+  
+.grow:hover { 
+  transform: scale(1.1); 
+  }
+
+  
+
 /* || HEADER || */
 
 .header-wrap {
@@ -60,6 +72,7 @@ button {
   padding: 2em;
   border: 5px solid rgba(0, 0, 0, 0.318);
   border-radius: 5px 5px 40px 40px;
+  margin: 0 auto;
 }
 
 
@@ -135,7 +148,13 @@ nav ul {
   width: 40rem;
   line-height: 2.8rem;
   padding: 2rem;
-  margin: auto;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.about-button-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* || TESTIMONIALS || */
