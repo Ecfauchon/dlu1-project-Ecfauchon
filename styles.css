@@ -410,10 +410,17 @@ form {
 
 /* ||  ----------- PROJECTS PAGE  ----------- || */
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.projects img {
+.projects img,
+.projects p {
   max-width: 400px;
 }
+
+
 
 
 
