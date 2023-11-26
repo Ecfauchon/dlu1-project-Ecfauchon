@@ -233,25 +233,60 @@ footer {
 }
 
 
+/* ||  ----------- ABOUT PAGE  ----------- || */
 
-/* || QUOTE-PAGE || */
+.bio img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 3em;
+}
 
-.form-wrap {
-  width: 40vw;
-  height: 500vh;
-  position: center;
-  
-  margin-top: -15em;
+.bio h2{
+  text-align: center;
+}
 
-  /* position: relative; */
+.bio-wrap {
+  background-color: #f5f5dc;
+  border: 5px solid rgba(0, 0, 0, 0.318);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.peter-wrap {
+  margin-top: 1em;
+}
+
+
+/* ||  ----------- PROJECTS PAGE  ----------- || */
+
+.projects img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 3em;
+}
+
+
+
+
+/* || ----------- QUOTE-PAGE -----------  || */
+
+
+.quote-wrap h1{
+  margin-top: 30%;
 }
 
 form {
+  display: block;
   background-color: #f5f5dc;
-  position: absolute;
-  bottom: 10em;
-  left: 40%;
+  margin-top: -5.5em;
 }
+
+
+
 
 /* || MEDIA QUERIES SCREEN SIZE MIN-WIDTH: 992PX || */
 
@@ -361,4 +396,40 @@ form {
     width: 40rem;
     margin: auto;
   }
+}
+
+
+
+/* ||  ----------- ABOUT PAGE  ----------- || */
+
+
+.bio img {
+  max-width: 400px;
+}
+
+
+/* ||  ----------- PROJECTS PAGE  ----------- || */
+
+
+.projects img {
+  max-width: 400px;
+}
+
+
+
+/* || ----------- QUOTE-PAGE -----------  || */
+
+
+.quote-wrap h1{
+  margin-top: 10%;
+}
+
+form {
+  display: block;
+  width: 30vw;
+  height: 30vh;
+  background-color: #f5f5dc;
+  margin-top: -20em;
+  margin-left: 20em;
+  z-index: 99;
 }
