@@ -1,6 +1,5 @@
 html {
   font-size: 62.5%;
-
 }
 
 body {
@@ -293,7 +292,7 @@ form {
 @media Only SCREEN and (min-width: 1200px) {
 
   body {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: auto;
   }
   /* || TYPOGRAPHY || */
@@ -396,7 +395,7 @@ form {
     width: 40rem;
     margin: auto;
   }
-}
+
 
 
 
@@ -411,16 +410,33 @@ form {
 /* ||  ----------- PROJECTS PAGE  ----------- || */
 
 .projects {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .projects img,
-.projects p {
+.bio-wrap {
   max-width: 400px;
+  min-height: 330px;
+  margin: auto;
 }
 
-
+.projects :nth-child(1) { order: 1; }
+.projects :nth-child(2) { order: 2; }
+.projects :nth-child(3) { order: 4; }
+.projects :nth-child(4) { order: 3; }
+.projects :nth-child(5) { order: 5; }
+.projects :nth-child(6) { order: 6; }
+.projects :nth-child(7) { order: 8; }
+.projects :nth-child(8) { order: 7; }
+.projects :nth-child(9) { order: 9; }
+.projects :nth-child(10) { order: 10; }
+.projects :nth-child(11) { order: 12; }
+.projects :nth-child(12) { order: 11; }
 
 
 
@@ -432,11 +448,20 @@ form {
 }
 
 form {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 30vw;
   height: 30vh;
   background-color: #f5f5dc;
   margin-top: -20em;
   margin-left: 20em;
   z-index: 99;
+}
+
+.submit {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
 }
