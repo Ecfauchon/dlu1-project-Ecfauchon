@@ -17,49 +17,45 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
-
     <!-- || HEADER || -->
-<div class="nav-hero">
-    <div class="header-wrap">
+    <div class="nav-hero">
+      <div class="header-wrap">
+        <header>
+          <img src="images/logo.jpg" width="100" alt="company logo" />
 
-      <header>
-        <img src="images/logo.jpg" width="100" alt="company logo" />
+          <nav>
+            <ul id="nav-items">
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="projects.html"> Portfolio </a></li>
+              <li><a href="about.html"> Our Team </a></li>
+            </ul>
+          </nav>
+          <a class="toggle" onClick="showNav()">
+            <i class="fa-solid fa-bars fa-xl" style="color: #070706"></i>
+          </a>
+        </header>
+      </div>
 
-        <nav>
-          <ul id="nav-items">
-            
-            <li><a href="index.html"> Home </a></li>
-            <li><a href="projects.html"> Portfolio </a></li>
-            <li><a href="about.html"> Our Team </a></li>
-          </ul>
-        </nav>
-        <a class="toggle" onClick="showNav()">
-          <i class="fa-solid fa-bars fa-xl" style="color: #070706"></i>
-        </a>
-      </header>
+      <!-- || HERO || -->
+
+      <section class="hero">
+        <img src="images/hero-img.png" alt="Custom home build" />
+
+        <div class="overlay"></div>
+
+        <p></p>
+        <h1>perspective design build ltd</h1>
+        <p>
+          building homes in comox valley and surrounding areas <br />
+          Since 2016
+        </p>
+      </section>
     </div>
-
-    <!-- || HERO || -->
-
-    <section class="hero">
-      <img src="images/hero-img.png" alt="Custom home build" />
-
-      <div class="overlay"></div>
-
-      <p></p>
-      <h1>perspective design build ltd</h1>
-      <p>
-        building homes in comox valley and surrounding areas <br>
-        Since 2016 
-      </p>
-    </section>
-</div>
 
     <!-- || ABOUT || -->
 
     <section class="about">
-      <h1>what we're about</h1>
+      <h2>what we're about</h2>
 
       <img
         class="about-img1"
@@ -104,16 +100,19 @@
         masterpieces.
       </p>
       <!--written by ChatGPT -->
-      
-        <a class="about-btn1 grow" href="projects.html"> <button> more projects </button> </a>
-        <a class="about-btn2 grow" href="about.html"> <button> about us </button> </a>
-      
+
+      <a class="about-btn1 grow" href="projects.html">
+        <button>more projects</button>
+      </a>
+      <a class="about-btn2 grow" href="about.html">
+        <button>about us</button>
+      </a>
     </section>
 
     <!-- || TESTIMONIALS || -->
 
     <section class="testimonials">
-      <h1>what clients have to say</h1>
+      <h2>what clients have to say</h2>
 
       <div class="testimonials-wrap">
         <div class="client-wrap">
@@ -122,7 +121,7 @@
             width="100"
             alt="Marine view custom built home"
           />
-          <h2>Mrs. Potts</h2>
+          <h3>Mrs. Potts</h3>
           <p>
             "Working with Perspective Design Build Ltd. has been an absolute
             pleasure! Peter and George are not just skilled craftsmen; they are
@@ -142,7 +141,7 @@
             width="100"
             alt="Sunnyside custom built home"
           />
-          <h2>The Radcliffes</h2>
+          <h3>The Radcliffes</h3>
           <p>
             "Our experience with Perspective Design Build Ltd. exceeded all
             expectations. From the initial consultation to the final touches,
@@ -162,7 +161,7 @@
             width="100"
             alt="Wild wood custom built home"
           />
-          <h2>Kristoff and Anna</h2>
+          <h3>Kristoff and Anna</h3>
           <p>
             "Perspective Design Build Ltd. is the go-to custom design and
             construction company in the Comox Valley, thanks to the incredible
@@ -181,13 +180,30 @@
     <!-- || CALL TO ACTION || -->
 
     <section class="action">
-      <h1>get a hold of us today</h1>
+      <h2>get a hold of us today</h2>
 
-      <h2>your dream come true is just a click away</h2>
+      <h3>your dream come true is just a click away</h3>
 
       <button class="grow" href="">call our office</button>
-      <a href="quote.html"> <button class="grow" href="">request a quote</button> </a>
+      <a href="quote.html">
+        <button class="grow" href="">request a quote</button>
+      </a>
     </section>
+
+    <div class="map-wrap">
+      <h2>come find us</h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10328.644654684163!2d-124.9979027!3d49.6701028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548815fec12a547b%3A0xe4875afed0bb3c46!2sPerspective%20Design%20Build%20Ltd.!5e0!3m2!1sen!2sca!4v1701554038711!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p>Close to the Honey Grove Bakery</p>
+    </div>
 
     <!-- || FOOTER || -->
 
@@ -195,7 +211,12 @@
       <footer>
         <img src="images/logo.jpg" width="100" alt="company logo" />
 
-        <button class="grow" onclick="topFunction()" id="myBtn" title="Go to top">
+        <button
+          class="grow"
+          onclick="topFunction()"
+          id="myBtn"
+          title="Go to top"
+        >
           Back to Top
         </button>
       </footer>
